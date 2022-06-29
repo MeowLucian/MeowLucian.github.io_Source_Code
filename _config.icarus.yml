@@ -3,11 +3,11 @@ version: 5.0.0
 # Icarus theme variant, can be "default" or "cyberpunk"
 variant: default
 # Path or URL to the website's logo
-logo: /img/logo.svg
+logo: /img/logo.png
 # Page metadata configurations
 head:
     # URL or path to the website's icon
-    favicon: /img/favicon.svg
+    favicon: /img/favicon.png
     # Web application manifests configuration
     # https://developer.mozilla.org/en-US/docs/Web/Manifest
     manifest:
@@ -109,12 +109,13 @@ navbar:
         Archives: /archives
         Categories: /categories
         Tags: /tags
+        List: /list
         About: /about
     # Links to be shown on the right of the navigation bar
-    links:
-        Download on GitHub:
-            icon: fab fa-github
-            url: https://github.com/ppoffice/hexo-theme-icarus
+    #links:
+    #    Download on GitHub:
+    #        icon: fab fa-github
+    #        url: https://github.com/ppoffice/hexo-theme-icarus
 # Page footer configurations
 footer:
     # Links to be shown on the right of the footer section
@@ -125,16 +126,16 @@ footer:
         Attribution 4.0 International:
             icon: fab fa-creative-commons-by
             url: https://creativecommons.org/licenses/by/4.0/
-        Download on GitHub:
+        Download my hexo theme on GitHub:
             icon: fab fa-github
-            url: https://github.com/ppoffice/hexo-theme-icarus
+            url: https://github.com/MeowLucian/MeowLucian.github.io_Hexo_Theme
 # Article related configurations
 article:
     # Code highlight settings
     highlight:
         # Code highlight themes
         # https://github.com/highlightjs/highlight.js/tree/master/src/styles
-        theme: atom-one-light
+        theme: atom-one-dark
         # Show copy code button
         clipboard: true
         # Default folding status of the code blocks. Can be "", "folded", "unfolded"
@@ -163,48 +164,48 @@ search:
 comment:
     type: disqus
     # Disqus shortname
-    shortname: ''
+    shortname: 'braingarden'
 # Donate plugin configurations
 # https://ppoffice.github.io/hexo-theme-icarus/categories/Plugins/Donation/
-donates:
-    # "Afdian.net" donate button configurations
-    -
-        type: afdian
-        # URL to the "Afdian.net" personal page
-        url: ''
-    # Alipay donate button configurations
-    -
-        type: alipay
-        # Alipay qrcode image URL
-        qrcode: ''
-    # "Buy me a coffee" donate button configurations
-    -
-        type: buymeacoffee
-        # URL to the "Buy me a coffee" page
-        url: ''
-    # Patreon donate button configurations
-    -
-        type: patreon
-        # URL to the Patreon page
-        url: ''
-    # Paypal donate button configurations
-    -
-        type: paypal
-        # Paypal business ID or email address
-        business: ''
-        # Currency code
-        currency_code: USD
-    # Wechat donate button configurations
-    -
-        type: wechat
-        # Wechat qrcode image URL
-        qrcode: ''
+#donates:
+#    # "Afdian.net" donate button configurations
+#    -
+#        type: afdian
+#        # URL to the "Afdian.net" personal page
+#        url: ''
+#    # Alipay donate button configurations
+#    -
+#        type: alipay
+#        # Alipay qrcode image URL
+#        qrcode: ''
+#    # "Buy me a coffee" donate button configurations
+#    -
+#        type: buymeacoffee
+#        # URL to the "Buy me a coffee" page
+#        url: ''
+#    # Patreon donate button configurations
+#    -
+#        type: patreon
+#        # URL to the Patreon page
+#        url: ''
+#    # Paypal donate button configurations
+#    -
+#        type: paypal
+#        # Paypal business ID or email address
+#        business: ''
+#        # Currency code
+#        currency_code: USD
+#    # Wechat donate button configurations
+#    -
+#        type: wechat
+#        # Wechat qrcode image URL
+#        qrcode: ''
 # Share plugin configurations
 # https://ppoffice.github.io/hexo-theme-icarus/categories/Plugins/Share/
-share:
-    type: sharethis
-    # URL to the ShareThis share plugin script
-    install_url: ''
+#share:
+#    type: sharethis
+#    # URL to the ShareThis share plugin script
+#    install_url: ''
 # Sidebar configurations.
 # Please be noted that a sidebar is only visible when it has at least one widget
 sidebar:
@@ -225,11 +226,11 @@ widgets:
         position: left
         type: profile
         # Author name
-        author: Your name
+        author: Meow Lucian
         # Author title
-        author_title: Your title
+        author_title: Software/Firmware Engineer
         # Author's current location
-        location: Your location
+        location: Hsinchu, Taiwan
         # URL or path to the avatar image
         avatar: 
         # Whether show the rounded avatar image
@@ -237,24 +238,18 @@ widgets:
         # Email address for the Gravatar
         gravatar: 
         # URL or path for the follow button
-        follow_link: https://github.com/ppoffice
+        follow_link: https://github.com/MeowLucian
         # Links to be shown on the bottom of the profile widget
         social_links:
             Github:
                 icon: fab fa-github
-                url: https://github.com/ppoffice
+                url: https://github.com/MeowLucian
             Facebook:
                 icon: fab fa-facebook
-                url: https://facebook.com
-            Twitter:
-                icon: fab fa-twitter
-                url: https://twitter.com
-            Dribbble:
-                icon: fab fa-dribbble
-                url: https://dribbble.com
-            RSS:
-                icon: fas fa-rss
-                url: /
+                url: https://www.facebook.com/profile.php?id=100002550282519
+            Linkedin:
+                icon: fab fa-linkedin
+                url: https://www.linkedin.com/in/lucian-lo-505a02132/
     # Table of contents widget configurations
     -
         # Where should the widget be placed, left sidebar or right sidebar
@@ -267,63 +262,63 @@ widgets:
         # Maximum level of headings to show (1-6)
         depth: 3
     # Recommendation links widget configurations
-    -
+    #-
         # Where should the widget be placed, left sidebar or right sidebar
-        position: left
-        type: links
+        #position: left
+        #type: links
         # Names and URLs of the sites
-        links:
-            Hexo: https://hexo.io
-            Bulma: https://bulma.io
-    # Categories widget configurations
-    -
-        # Where should the widget be placed, left sidebar or right sidebar
-        position: left
-        type: categories
+        #links:
+        #  Hexo: https://hexo.io
+        #  Bulma: https://bulma.io
     # Recent posts widget configurations
     -
         # Where should the widget be placed, left sidebar or right sidebar
-        position: left
+        position: right
         type: recent_posts
-    # Archives widget configurations
+    # Categories widget configurations
     -
         # Where should the widget be placed, left sidebar or right sidebar
-        position: left
-        type: archives
+        position: right
+        type: categories
+    # Archives widget configurations
+    #-
+        # Where should the widget be placed, left sidebar or right sidebar
+        #position: right
+        #type: archives
     # Tags widget configurations
     -
         # Where should the widget be placed, left sidebar or right sidebar
-        position: left
+        position: right
         type: tags
     # Google FeedBurner email subscription widget configurations
-    -
+    #-
         # Where should the widget be placed, left sidebar or right sidebar
-        position: left
-        type: subscribe_email
+        #position: left
+        #type: subscribe_email
         # Hint text under the email input
-        description: 
+        #description: 
         # Feedburner ID
-        feedburner_id: ''
+        #feedburner_id: ''
     # Google AdSense unit configurations
-    -
+    #-
         # Where should the widget be placed, left sidebar or right sidebar
-        position: left
-        type: adsense
+        #position: left
+        #type: adsense
         # AdSense client ID
-        client_id: ''
+        #client_id: ''
         # AdSense AD unit ID
-        slot_id: ''
+        #slot_id: ''
     # Follow.it email subscription widget configurations
-    -
+    #-
         # Where should the widget be placed, left sidebar or right sidebar
-        position: left
-        type: followit
+        #position: left
+        #type: followit
         # Hint text under the email input
-        description: 
+        #description: 
         # Subscription form action URL
-        action_url: ''
+        #action_url: ''
         # Feed claiming verification code
-        verification_code: ''
+        #verification_code: ''
 # Plugin configurations
 # https://ppoffice.github.io/hexo-theme-icarus/categories/Plugins/
 plugins:
