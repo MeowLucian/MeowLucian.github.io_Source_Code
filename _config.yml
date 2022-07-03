@@ -107,5 +107,6 @@ theme: icarus
 ## Docs: https://hexo.io/docs/one-command-deployment
 deploy:
   type: git
-  repository: https://github.com/MeowLucian/MeowLucian.github.io.git
+  repository: git@github.com:MeowLucian/MeowLucian.github.io.git
   branch: master
+  token: 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
