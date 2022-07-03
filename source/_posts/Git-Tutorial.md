@@ -192,9 +192,15 @@ git pull
 git rebase -i "<commit>"
 
 pick   "<commit_1>"
-reword "<commit_2>"   # change commit name
+reword "<commit_2>"   # Change commit name
 pick   "<commit_3>"
 s      "<commit_4>"   # Squash
+
+edit   "<commit_5>"   # Rebase interactive mode
+
+# Change Commit Author Name example
+git commit --amend --author="MeowLucian <Meow.lucian@gmail.com>" --no-edit
+git rebase --continue
 ```
 
 ## Tag
