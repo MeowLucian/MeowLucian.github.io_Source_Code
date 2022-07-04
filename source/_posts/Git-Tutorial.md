@@ -213,11 +213,15 @@ git tag -d "<tag ID>"   # Delete tag
 git tag -am "<tag comment>" "<tag ID>"
 ```
 
-## Stash
+## Stash 封存
 ```bash
-git stash
+git add .
+git stash save 'stash 1'
+
 git stash list
-git stash pop
+
+git stash pop stash@{0}
+
 git stash drop
 git stash clear
 ```
