@@ -66,5 +66,8 @@ C 教學與筆記。
 * [strrev 實作 (strrev Implementation)](/C/Common/strrev-Implementation)
 * [字串交換 (Swap String)](/C/Common/Swap-String)
 
+### 指標 (Pointer)
+* [++p, p++ (++p, p++)](/C/Common/++p-p++)
+
 ### LeetCode (LeetCode)
 * [Max subarray (Max-subarray)](/C/LeetCode/Max-subarray)
