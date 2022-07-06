@@ -1,13 +1,14 @@
 ---
 title: 連結串列 (Linked list)
 date: 2019-06-27
-thumbnail: https://drive.google.com/uc?export=download&id=1akRbLktKgmvIPfGXA0HOxZPfaqcwov2C
+cover: /images/C-Tutorial/C-Tutorial-banner.jpg
+thumbnail: /images/C-Tutorial/C-Tutorial-banner.jpg
 toc: true
 hidden: true
 categories: Learning-Note-學習筆記
 tags:
     - Code
-    - C++
+    - C
 ---
 
 連結串列 教學與筆記。
@@ -17,106 +18,82 @@ tags:
 # struct 實現
 
 ```cpp
-struct node {
+#include <stdio.h>
+#include <stdlib.h>
+
+struct Node {
     int data;
-    node* next;
+    struct Node* next;
 };
-```
 
-```cpp
-node* creat(int newdata) {
-    node* head = new node;
-    head->data = newdata;
-    head->next = NULL;
-    return head;
+void push(struct Node** head_ref, int new_data){
+    struct Node* new_node = (struct Node*)malloc(sizeof(struct Node));
+    new_node -> data = new_data;
+    new_node -> next = *head_ref;
+    (*head_ref) = new_node;
 }
-```
 
-```cpp
-void print_node(node* p) {
-    while (p != NULL) {
-        cout << p->data << endl;
-        p = p->next;
+void print_list(struct Node* node){
+    while(node != NULL){
+        printf("%d ", node->data);
+        node = node -> next;
     }
+    printf("\n");
 }
-```
 
-```cpp
-void push_back(node* head, int newdata) {
-    node* p = head;
-    while (p->next != NULL)
-        p = p->next;
-    p->next = new node;
-    p = p->next;
-    p->data = newdata;
-    p->next = NULL;
-}
-```
-
-```cpp
-void push_front(node* &head, int newdata) {
-    node* p = new node;
-    p->data = newdata;
-    p->next = head;
-    head = p;
-}
-```
-
-```cpp
-void delete_node(node* &head, int ddata) {
-    node* previous = NULL;
-    node* current = head;
-    while (current->data != ddata && current->next != NULL) {
-        previous = current;
-        current = current->next;
+void reverse(struct Node** head_ref){
+    struct Node* prev = NULL;
+    struct Node* curr = *head_ref;
+    struct Node* next = NULL;
+    while(curr != NULL){
+        // Notice below loop relations
+        next = curr -> next; // Store next first
+        curr -> next = prev;
+        prev = curr;
+        curr = next;
     }
-	
-    if (current->data == ddata) {
-        if (previous == NULL) { // First node
-            head = current->next;
-            delete current;
+    *head_ref = prev;
+}
+
+void delete(struct Node** head_ref, int input){
+    // Delete all occurrences input num
+    struct Node* prev = NULL;
+    struct Node* curr = *head_ref;
+
+    // If head node is input
+    if(curr -> data == input){
+        *head_ref = curr -> next;
+        free(curr);
+        curr = *head_ref;
+    }
+
+    // Search input in the middle of list
+    while(curr != NULL){
+        if(curr -> data == input){
+            prev -> next = curr -> next;
+            free(curr);
+            curr = prev -> next;
         }
         else {
-            previous->next = current->next;
-            delete current;
+            prev = curr;
+            curr = curr -> next;
         }
     }
-	
-    else
-        cout << "Not found" << endl;
+}
+
+void main() {
+    struct Node* head = NULL;
+    push(&head, 3);
+    push(&head, 4);
+    push(&head, 2);
+    push(&head, 3);
+    push(&head, 1);
+    print_list(head); // 1 3 2 4 3
+
+    reverse(&head);
+    print_list(head); // 3 4 2 3 1
+
+    delete(&head, 3);
+    print_list(head); // 4 2 1
 }
 ```
-
-```cpp
-void Reverse(node* &head) {
-	node *previous = NULL;
-	node *current = head;
-	node *preceding = head->next;
-
-	while (preceding != NULL) {
-		current->next = previous;
-		previous = current;
-		current = preceding;
-		preceding = preceding->next;
-	}
-	current->next = previous;
-	head = current;
-}
-```
-
-```cpp
-int main() {
-
-    node* head = creat(1);
-    push_back(head, 2);
-    push_front(head,0);
-    delete_node(head,1);
-    Reverse(head);
-    print_node(head);
-
-    system("pause");
-    return 0;
-}
-```
-
-# object 實現
