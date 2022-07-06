@@ -70,5 +70,6 @@ C 教學與筆記。
 * [++p, p++ (++p, p++)](/C/Common/++p-p++)
 
 ### LeetCode (LeetCode)
-* [Two sum (Two-sum)](/C/LeetCode/Two-sum)
-* [Max subarray (Max-subarray)](/C/LeetCode/Max-subarray)
+* [Two sum](/C/LeetCode/Two-sum)
+* [Max subarray](/C/LeetCode/Max-subarray)
+* [Merge Two Sorted Lists](/C/LeetCode/Merge-Two-Sorted-Lists)
