@@ -21,12 +21,12 @@ Extern 關鍵字 教學與筆記。
 
 # 範例
 
-```c
+```cpp
 // some.c
 int a = 100;
 ```
 
-```c
+```cpp
 // main.c
 #include <stdio.h>
 
@@ -44,7 +44,7 @@ gcc -o test main.c some.c
 # 重覆定義錯誤
 extern 宣告 a 在`其他位置被定義`。如果在使用 extern 時`同時指定其值`，則視為在該位置`定義`變數。結果就是引發重覆定義錯誤。
 
-```c
+```cpp
 // main.c
 #include <stdio.h>
 
@@ -57,7 +57,7 @@ void main() {
 # 重新指定其值
 `先聲明 extern 找到變數，再重新指定其值。`
 
-```c
+```cpp
 // main.c
 #include <stdio.h>
 

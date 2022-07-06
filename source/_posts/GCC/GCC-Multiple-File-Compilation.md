@@ -17,12 +17,12 @@ GCC 編譯多個文件 教學與筆記。
 
 # 範例程式
 
-```c
+```cpp
 // show.h
 void show();
 ```
 
-```c
+```cpp
 // show.c
 #include <stdio.h>
 
@@ -33,7 +33,7 @@ void show() {
 }
 ```
 
-```c
+```cpp
 // main.c
 #include "show.h"
 

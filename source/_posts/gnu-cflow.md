@@ -43,7 +43,7 @@ sudo apt install graphviz
 
 * [官網範例](https://www.gnu.org/software/cflow/manual/html_node/Quick-Start.html#Quick-Start)
 
-```c
+```cpp
 /* whoami.c - a simple implementation of whoami utility */
 #include <pwd.h>
 #include <sys/types.h>

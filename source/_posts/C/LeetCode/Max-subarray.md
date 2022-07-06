@@ -22,7 +22,7 @@ Explanation: [4,-1,2,1] has the largest sum = 6.
 
 使用 Kadane’s Algorithm
 
-```c
+```cpp
 #include <stdio.h>
 const int INT_MIN = -1e9;
 

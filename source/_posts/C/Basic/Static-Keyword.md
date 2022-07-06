@@ -25,7 +25,7 @@ Static 關鍵字 教學與筆記。
 
 * 通常寫在 .c 檔：
 
-```c
+```cpp
 static int i;
 static void function(void)
 ```
@@ -36,7 +36,7 @@ static void function(void)
 
 `一但變數生成，它就會一直存在記憶體之中；直到程式結束，才會從記憶體消逝。`
 
-```c
+```cpp
 #include <stdio.h>
 
 void count() {
