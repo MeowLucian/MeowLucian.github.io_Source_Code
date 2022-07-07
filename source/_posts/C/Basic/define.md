@@ -36,6 +36,18 @@ void main() {
 }
 ```
 
+```cpp
+#include <stdio.h>
+
+#define max(x,y) (x > y ? x : y)
+
+void main(){
+    int a = 10;
+    int b = 20;
+    printf("%d\n", max(a,b)); // 20
+}
+```
+
 # 注意事項
 
 ```cpp
