@@ -19,6 +19,27 @@ tags:
 
 使用`輾轉相除法`求最大公因數。
 
+* 非遞迴 (Non Recursive)
+```cpp
+#include <stdio.h>
+
+int gcd(int x, int y) {
+    int mod = 0;
+
+    while(y != 0) {
+        mod = x % y;
+        x = y;
+        y = mod;
+    }		
+    return x;
+}
+
+int main() {
+    printf("%d\n", gcd(54, 24)); // 6
+}
+```
+
+* 遞迴 (Recursive)
 ```cpp
 #include <stdio.h>
 
