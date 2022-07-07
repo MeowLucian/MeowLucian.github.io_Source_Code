@@ -58,7 +58,8 @@ C 教學與筆記。
 * [最大公因數 (Greatest Common Divisor)](/C/Common/GCD)
 * [質數 (Prime)](/C/Common/Prime)
 * [費氏數列 (Fibonacci)](/C/Common/Fibonacci)
-* [quickBitcount (quickBitcount)](/C/Common/quickBitcount)
+* [quickBitcount](/C/Common/quickBitcount)
+* [十進位轉二進位 (Dec to Bin)](/C/Common/dec-to-bin)
 
 ### 字串 (String)
 * [strlen 實作 (strlen Implementation)](/C/Common/strlen-Implementation)
