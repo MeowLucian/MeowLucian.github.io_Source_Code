@@ -60,6 +60,7 @@ C 教學與筆記。
 * [費氏數列 (Fibonacci)](/C/Common/Fibonacci)
 * [quickBitcount](/C/Common/quickBitcount)
 * [十進位轉二進位 (Dec to Bin)](/C/Common/dec-to-bin)
+* [bitwise-operation](/C/Common/bitwise-operation)
 
 ### 字串 (String)
 * [strlen 實作 (strlen Implementation)](/C/Common/strlen-Implementation)
