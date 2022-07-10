@@ -41,7 +41,7 @@ struct ListNode* mergeTwoLists(struct ListNode* list1, struct ListNode* list2){
             tail -> next = list2;
             list2 = list2 -> next;
         }
-        tail = tail -> next;
+        tail = tail -> next; // Move to either old list1 node or old list2 node
     }
 
     if(list1 == NULL){
@@ -57,5 +57,5 @@ struct ListNode* mergeTwoLists(struct ListNode* list1, struct ListNode* list2){
 ```
 
 # 參考
-[LeetCode Max Subarray webpage](https://leetcode.com/problems/merge-two-sorted-lists/)
+[LeetCode Merge Two Sorted Lists webpage](https://leetcode.com/problems/merge-two-sorted-lists/)
 [geeksforgeeks merge-two-sorted-linked-lists](https://www.geeksforgeeks.org/merge-two-sorted-linked-lists/)
