@@ -249,7 +249,7 @@ widgets:
                 url: https://www.facebook.com/profile.php?id=100002550282519
             Linkedin:
                 icon: fab fa-linkedin
-                url: https://www.linkedin.com/in/lucian-lo-505a02132/
+                url: https://www.linkedin.com/in/lucian-lo
     # Table of contents widget configurations
     -
         # Where should the widget be placed, left sidebar or right sidebar

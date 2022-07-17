@@ -11,14 +11,14 @@ Naming the blog as `Brain Garden` to record my life and research.
 # Author Introduction
 Hi there, I'm Lucian.
 
-Shih-An (Lucian) has 3+ years’ experience (2019-2022) as a senior software engineer worked for WNC (Wistron NeWeb Corporation) and focuses on FWA/CPE type 4G/5G home router embedded system product. He implemented business customised software functions for modem module efficiently and supported the teams cross B.U. (Wifi, QA team ...etc) and global colleague groups. From the passing years’ effort, Shih-An has been rewarded as "2021 Outstanding Employees of THE YEAR" which got 22 staffs selected out of 2,000+ employees per year based on the best technical support for customers and collaboration with team members.
+Shih-An (Lucian) has nearly 3+ years’ experience (2019-2022) as a senior software engineer and focuses on FWA/CPE type 4G/5G home router embedded system product. He implemented business customised software functions for modem module and supported the teams cross B.U. (Wifi, QA team ...etc) and global colleague groups. From the passing years’ effort, Shih-An has been rewarded as "2021 Outstanding Employees of THE YEAR" which got 22 staffs selected out of 2,000+ employees per year based on the best technical support for customers and collaboration with team members.
 
 
 # Work Experience
 1. Experienced with broadband FWA/CPE type product based on Qualcomm modem chipset SDX55/SDX65 platform.
 2. Developed APIs via Qualcomm QMI/DCI interface to get modem status related info, such as present connection PLMN, band info, ARFCN, bandwidth, RSRP, RSRQ, SIM info ICCID, IMSI ... etc for customized apps and WebGUI.
-3. Maintain each project’s modem configure feature settings for specific customer operator (setting preferred band, LTE/NR RAT preference, RF calibration settings ... etc) and implement WNC specific CRUD (Create, Read, Update and Delete) and OTA (upgrade Over-The-Air) mechanisms for modem software config NV (non-volatile) items/EFS files.
-4. Familiar with 4G/5G Test Equipment (callbox) included Keysight 7515 A/B, Anritsu MT8000A, Amarisoft LTE-100 to test 4G (LTE), 5G (FR1/FR2) with parameters settings and end-to-end throughput verification test by iperf.
+3. Maintain each project’s modem configure feature settings for specific customer operator (setting preferred band, LTE/NR RAT preference, RF calibration settings ... etc) and implement WNC specific CRUD (Create, Read, Update and Delete) mechanisms and OTA (upgrade Over-The-Air) for modem software config NV (non-volatile) items/EFS files.
+4. Familiar with 4G/5G Test Equipment (simulator callbox) included Keysight 7515 A/B, Anritsu MT8000A, Amarisoft LTE-100 to test 4G (LTE), 5G (FR1/FR2) with parameters settings and end-to-end throughput verification test by iperf.
 5. Customer/FAE field trial issue debugging support, included modem (WNC customized apps) log collecting/analysing.
 6. 3GPP GCF certification support experience. (DEKRA, Taiwan).
 7. Network protocol knowledges, such as TCP/IP, ICMP, IPv4/IPv6, DHCP, Route ... etc.
