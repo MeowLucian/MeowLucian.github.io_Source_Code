@@ -69,7 +69,10 @@ C 教學與筆記。
 * [字串交換 (Swap String)](/C/Common/Swap-String)
 
 ### 指標 (Pointer)
-* [++p, p++ (++p, p++)](/C/Common/++p-p++)
+* [++p, p++](/C/Common/++p-p++)
+
+### 連結串列 (Linked list)
+* [Delete last n node](/C/Common/Delete-last-n-node)
 
 ### LeetCode (LeetCode)
 * [Two sum](/C/LeetCode/Two-sum)

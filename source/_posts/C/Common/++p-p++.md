@@ -1,5 +1,5 @@
 ---
-title: ++p, p++ (++p p++)
+title: ++p, p++
 date: 2022-07-04
 cover: /images/C-Tutorial/C-Tutorial-banner.jpg
 thumbnail: /images/C-Tutorial/C-Tutorial-banner.jpg
