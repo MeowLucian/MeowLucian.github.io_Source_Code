@@ -30,7 +30,7 @@ void main() {
 
     p = array_1;
     v = 0;
-    v = ++*p; // *p = *p + 1; v = *p + 1
+    v = ++*p; // *p = *p + 1; v = *p
     printf("v = ++*p;\n");
     printf("v = %d, array[0] = %d, array[1] = %d, *p = %d\n\n", v, array_1[0], array_1[1], *p);
 
