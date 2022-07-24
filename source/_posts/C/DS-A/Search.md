@@ -15,34 +15,36 @@ tags:
 
 <!-- more -->
 
-# 二分搜尋法
+# 二分搜尋法 (binary search)
 
 ```cpp
-int Binary_search(int *arr, int L, int R, int target) {
-    int ret = -1;
-    int mid;
+#include <stdio.h>
 
-    while (L <= R) {
-        mid = (L + R) / 2;
+int b_search(int* arr, int L, int R, int target){
+    int mid = 0;
 
-        if (arr[mid] < target) {
+    while(L<R){
+        mid = (L+R)/2;
+        if(target == arr[mid]){
+            return mid;
+        }
+        if(target > arr[mid]){
             L = mid + 1;
         }
-        else if (arr[mid] > target) {
-            R = mid - 1;
-        }
-        else {
-            ret = mid;
-            break;
+        if(target < arr[mid]){
+            R = mid;
         }
     }
-    return ret;
+    return -1; // not found
 }
 
-void main() {
-    int array[] = { 1,2,3,4,5,6,7,8 };
-    int len = sizeof(array) / sizeof(array[0]);
-    int index = Binary_search(array, 0, len-1, 5);
-    printf("%d\n", index);    
+void main(){
+    int array[6] = {3,7,8,15,16,17};
+    int array_size = sizeof(array)/sizeof(array[0]);
+
+    int index = b_search(array, 0, array_size, 8);
+    printf("%d\n", index); // 2
 }
 ```
+
+[Reference](https://www.youtube.com/watch?v=CMweVF2iSyQ)
