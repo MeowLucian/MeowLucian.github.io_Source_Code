@@ -74,8 +74,8 @@ void main(){
     int n = 2;
 
     // set next node of node "n-1" to node "n+1"
-    ptr_arr[list_size-1-n-1]->next = ptr_arr[list_size-1-n+1];
-    free(ptr_arr[list_size-1-n]);
+    ptr_arr[list_size-n-1]->next = ptr_arr[list_size-n+1];
+    free(ptr_arr[list_size-n]);
     print_list(head);
 }
 ```
@@ -86,5 +86,5 @@ n = 2 example
 
 ```cpp
 1 2 3 4 5 6 7
-1 2 3 4 6 7
+1 2 3 4 5 7
 ```
