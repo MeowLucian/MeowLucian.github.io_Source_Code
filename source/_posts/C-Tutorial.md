@@ -70,6 +70,7 @@ C 教學與筆記。
 
 ### 指標 (Pointer)
 * [++p, p++](/C/Common/++p-p++)
+* [calculate-size-without-sizeof](/C/Common/calculate-size-without-sizeof)
 
 ### 連結串列 (Linked list)
 * [Delete last n node](/C/Common/Delete-last-n-node)
